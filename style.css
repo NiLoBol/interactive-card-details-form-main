@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+:root {
+    --Lineargradient: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+    --Red: hsl(0, 100%, 66%);
+    --White: hsl(0, 0%, 100%);
+    --Lightgrayishviolet: hsl(270, 3%, 87%);
+    --Darkgrayishviolet: hsl(279, 6%, 55%);
+    --Verydarkviolet: hsl(278, 68%, 11%);
+    --Center-card3: calc((100vh - 500px)/2)
+}
+
+body {
+    color: var(--Verydarkviolet);
+    font-family: 'Space Grotesk', sans-serif;
+    max-height: 100vh !important;
+    max-width: 100vw !important;
+    display: flex;
+    font-weight: 500;
+    font-size: 18px;
+    background-image: url(/images/bg-main-desktop.png);
+    background-size: 33vw 100vh;
+    background-repeat: no-repeat;
+}
+
+.cw {
+    color: var(--White);
+    max-height: 300px !important;
+}
+
+.relative {
+    position: relative;
+    bottom: 230px;
+
+}
+
+.relative2 {
+    position: relative;
+    bottom: 140px;
+    left: 360px;
+}
+
+.m-name-card {
+    margin-left: 20px;
+}
+
+.m-name-card2 {
+    float: right;
+    margin-right: 40px;
+}
+
+.text-card {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+
+.mb-70 {
+    margin-bottom: 70px;
+}
+
+.card-form {
+    width: 400px;
+    height: calc(100vh - var(--Center-card3));
+}
+
+input{
+    height: 50px;
+}
+.card-form input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 0px;
+    text-transform: uppercase;
+}
+p.notup{
+    color: var(--Lightgrayishviolet);
+    text-transform: unset;
+}
+
+.card-complete {
+    width: 300px;
+    text-align: center;
+}
+
+.h-50 {
+    height: 50px !important;
+}
+
+.content-1 {
+    display: block;
+    width: 60vw;
+    height: 100%;
+}
+
+.content-2 {
+    width: 40vw;
+    height: 100%;
+}
+
+.m-card-1 {
+    width: 440px;
+    margin-top: calc((100vh - 640px)/2);
+    margin-left: 15vw;
+}
+
+.m-card-2 {
+    position: relative;
+    width: 450px;
+    left: 20vw;
+}
+
+.m-card-3 {
+    margin-top: var(--Center-card3);
+}
+
+.Confirm {
+    border: none;
+    background: var(--Verydarkviolet) !important;
+    width: 400px;
+    height: 70px;
+    margin-top: 40px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (max-width: 800px) {
+    body {
+        width: 100vw !important;
+        height: 100vh !important;
+        background-image: url(/images/bg-main-mobile.png);
+        background-size: 100vw 33vh;
+        background-repeat: no-repeat;
+        font-size: 14px;
+    }
+    .row{
+        margin: 0px;
+    }
+    .mp0{
+        padding: 0px !important;
+    }
+    .content-1 {
+        display: block;
+        width: 90% !important;
+        height: 40vh !important;
+    }
+
+    .content-2 {
+        display: block;
+        width: 90% !important;
+        height: 50vh !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .m-card-1 {
+        position: relative;
+        margin: 0px;
+        margin-top: 140px;
+        margin-left: 5vw;
+        width: 80vw;
+        z-index: 2;
+    }
+    .m-card-2{
+        
+        width: 300px;
+    }
+    .wm1 {
+        margin-top: 50px;
+        width: 70vw;
+    }
+    .relative {
+        width: 70%;
+        position: relative;
+        bottom: 150px;
+    }
+
+    .mb-70 {
+        margin-bottom: 20px;
+        width: 70px;
+    }
+
+    .text-card {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .m-card-2 {
+        position: relative;
+        margin-top: -91vw;
+        z-index: 1;
+    }
+    .relative2 {
+        position: absolute;
+        bottom: 85px;
+        left: 55vw;
+    }
+    .m-card-3 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    .card-form {
+        width: 400px;
+        height: calc(60vh - var(--Center-card3));
+    }
+    .m-name-card2 {
+        float: right;
+        margin-right: 0px;
+    }
+    .m-0{
+        padding: 0px;
+    }
+    
+}
